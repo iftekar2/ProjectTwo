@@ -11,7 +11,7 @@ h1 {
 }
 
 .main {
-  height: 500px;
+  height: 300px;
   width: 600px;
   background-color: white;
   border-radius: 10px;
@@ -57,10 +57,50 @@ h3 {
   width: 40px;
 }
 
-/* .contentTitle {
-  di
-  splay: flex;
-  
-  
-  gap: 80px;
-} */
+.result {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.calculateAddRow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.claculateGPA {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.claculateGPA button {
+  background-color: #036865;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
+
+.addRow {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addRow button {
+  background-color: #036865;
+  width: 150px;
+  height: 40px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+}
