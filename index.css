@@ -1,7 +1,7 @@
 body {
   display: grid;
   place-items: center;
-  height: 905px;
+  height: 100vh; /* Adjusted to be responsive */
   margin: 0;
   background-color: #eaf6f6;
 }
@@ -11,10 +11,11 @@ h1 {
 }
 
 .main {
-  height: 300px;
   width: 600px;
   background-color: white;
   border-radius: 10px;
+  padding: 20px; /* Added padding for better spacing */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visual */
 }
 
 h3 {
@@ -23,38 +24,51 @@ h3 {
 
 .inputBoxes {
   display: flex;
+  flex-direction: column; /* Changed to column for better alignment */
   gap: 20px;
+}
+
+.inputRow {
   display: flex;
-  justify-content: center;
+  justify-content: space-between; /* Adjusted for better spacing */
   align-items: center;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.contentName,
+.contentGrade {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+input {
+  height: 35px;
+  background-color: #eaf6f6;
+  border: none;
+  font-size: 18px;
+  border-radius: 5px;
+  padding: 0 10px; /* Added padding for better spacing */
 }
 
 .className {
-  height: 35px;
   width: 250px;
-  background-color: #eaf6f6;
-  border: none;
-  font-size: 18px;
-  border-radius: 5px;
 }
 
-.classGrade {
-  height: 35px;
+.classGrade,
+.classCredit {
   width: 100px;
-  background-color: #eaf6f6;
-  border: none;
-  font-size: 18px;
-  border-radius: 5px;
 }
 
-.buttom {
-  margin-left: 10px;
+.button {
   background-color: #eaf6f6;
   border: none;
   font-size: 18px;
   border-radius: 5px;
   height: 35px;
   width: 40px;
+  cursor: pointer; /* Added cursor pointer for better UX */
 }
 
 .result {
@@ -69,32 +83,10 @@ h3 {
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-.claculateGPA {
   margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.claculateGPA button {
-  background-color: #036865;
-  width: 150px;
-  height: 40px;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-}
-
-.addRow {
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
+.calculateGPA button,
 .addRow button {
   background-color: #036865;
   width: 150px;
@@ -103,4 +95,5 @@ h3 {
   border: none;
   border-radius: 5px;
   font-size: 18px;
+  cursor: pointer; /* Added cursor pointer for better UX */
 }

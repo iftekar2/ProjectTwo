@@ -5,41 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Document</title>
+    <script src="index.js"></script>
   </head>
   <body>
     <div class="main">
       <div class="title">
         <h1>GPA Calculator</h1>
       </div>
+
       <div class="inputBoxes">
-        <div class="contentName">
-          <h3>Course Name</h3>
-          <input class="className" placeholder="Course Name" />
-        </div>
-
-        <div class="contentGrade">
-          <h3>Grade</h3>
-          <input class="classGrade" placeholder="A" />
-        </div>
-
-        <div class="contentCredit">
-          <h3>Credits</h3>
-          <input class="classGrade" placeholder="4" />
-          <button class="buttom" onclick="removeRow">X</button>
+        <div class="inputRow">
+          <div class="contentName">
+            <h3>Course Name</h3>
+            <input class="className" placeholder="Course Name" />
+          </div>
+          <div class="contentGrade">
+            <h3>Grade</h3>
+            <input class="classGrade" placeholder="A" />
+          </div>
+          <div class="contentCredit">
+            <h3>Credits</h3>
+            <input class="classCredit" placeholder="4" />
+            <button class="button" onclick="removeRow(this)">X</button>
+          </div>
         </div>
       </div>
+
+      <div class="input"></div>
 
       <div class="result">
         <h3 class="showResult">A</h3>
       </div>
 
       <div class="calculateAddRow">
-        <div class="claculateGPA">
-          <button onclick="claculateGPA">Calculate GPA</button>
+        <div class="calculateGPA">
+          <button onclick="calculateGPA()">Calculate GPA</button>
         </div>
-
         <div class="addRow">
-          <button onclick="addRow">Add Row</button>
+          <button onclick="addRow()">Add Row</button>
         </div>
       </div>
     </div>
