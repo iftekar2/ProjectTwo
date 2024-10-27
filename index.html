@@ -3,9 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="index.css" />
     <title>Document</title>
   </head>
   <body>
-    <h1>Hello Wrold!</h1>
+    <div class="main">
+      <div class="title">
+        <h1>GPA Calculator</h1>
+      </div>
+      <div class="inputBoxes">
+        <div class="contentName">
+          <h3>Course Name</h3>
+          <input class="className" placeholder="Course Name" />
+        </div>
+
+        <div class="contentGrade">
+          <h3>Grade</h3>
+          <input class="classGrade" placeholder="A" />
+        </div>
+
+        <div class="contentCredit">
+          <h3>Credits</h3>
+          <input class="classGrade" placeholder="4" />
+          <button class="buttom" onclick="removeRow">X</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
